@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "vakicloud-20190102115322-authRole",
+            "UnauthRoleArn": "arn:aws:iam::387526128415:role/vakicloud-20190102115322-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::387526128415:role/vakicloud-20190102115322-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "vakicloud-20190102115322-deployment",
+            "UnauthRoleName": "vakicloud-20190102115322-unauthRole",
+            "StackName": "vakicloud-20190102115322",
+            "StackId": "arn:aws:cloudformation:eu-west-1:387526128415:stack/vakicloud-20190102115322/18791b20-0e85-11e9-aae9-500c3d40ec36"
+        }
+    }
+}

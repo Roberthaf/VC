@@ -1,0 +1,24 @@
+
+
+.shadow-box{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.main{
+  min-height: 800px;
+}
+/*If screen is less then 1600px*/
+@media only screen and (min-width: 1600px) {
+  .default-margin{
+    margin: 0vh 15vh 0vh 15vh!important;
+  }
+}
+.default-margin{
+  margin: 0vh 5vh 0vh 5vh;
+}
+.App{
+  height: 100%;
+}
+.Active-message{
+  padding-top: 55px;
+  padding-left: 55px;
+}

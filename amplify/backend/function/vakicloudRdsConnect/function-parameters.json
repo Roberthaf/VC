@@ -1,0 +1,18 @@
+{
+    "permissions": {
+        "auth": {
+            "vakicloud0e5f92bf": [
+                "create",
+                "read",
+                "update"
+            ]
+        },
+        "api": {
+            "vakicloudAuth": [
+                "create",
+                "read",
+                "update"
+            ]
+        }
+    }
+}

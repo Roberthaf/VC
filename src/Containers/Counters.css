@@ -1,0 +1,27 @@
+.counters-container{
+    padding-top: 25px;
+    margin-bottom: 25px;
+    
+}
+.counters-container__table{
+    padding-top:15px;
+    padding-bottom: 125px;
+    /* height: 2600px; */
+}
+.counters-container__loader{
+    position: relative;
+    height: 25px;
+    
+
+}
+.gray-text-anchor{
+    font-size: large;
+    padding: 15px 15px 15px 15px;
+    color: gray;
+}
+/* .counters-container__count-table{
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin-top: 25px;
+}
+ */

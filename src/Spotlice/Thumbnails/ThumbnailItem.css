@@ -1,0 +1,89 @@
+/* Style each item in the thumbnail list and both activeItem and hover over effects*/
+
+.imageItem {
+    text-align: center;
+    transition: all .2s ease-in-out;
+    margin: 30px 5px 10px 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.imageItem img {
+    width:185px;
+
+}
+.imageItem:hover, .activeItem {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.imageItem.activeItem{
+    transform: scale(1.1);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* For each thumbnail card display as a block*/
+.caption {
+    display: block;
+    color:black;
+}
+.thumbnailListContainer{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width:100%;
+    height: 100%;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 283px;
+}
+
+
+/* Colors used to indicate image classification*/
+.Finished{
+    background-color:  rgba(67, 235, 37, 0.733)
+}
+
+.Marked{
+    background-color: rgb(245, 245, 12);
+}
+
+.Rejected{
+    background-color: rgba(248, 35, 35, 0.801);
+}
+
+.New{
+    background-color: rgba(35, 181, 248, 0.801);
+}
+
+/* Styling for horizontal thumbnail*/
+.ScrollStyle.thumbnailListContainer{
+    overflow-y: auto;
+    white-space: nowrap;
+}
+/* Styling for scrollbar*/
+/* width */
+
+::-webkit-scrollbar.thumbnailListContainer {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track.thumbnailListContainer {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb.thumbnailListContainer {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb.thumbnailListContainer:hover {
+    background: #555; 
+}
+
+.Image_count{
+    float: right;
+    color: rgb(144, 142, 142);
+    padding-right: 20px;
+}

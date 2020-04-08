@@ -1,0 +1,11 @@
+.organisation-container{
+    width: 100%;
+}
+.organisation-container__table{
+    margin-top: 15px;
+    width: 70%;
+}
+.organisation-container_edit{
+    margin-left: 55px;
+    width: 30%;
+}

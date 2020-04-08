@@ -1,0 +1,8 @@
+#counter-info, #counter-info1, #counter-info2{
+    min-height: 468px;
+}
+.panel-footer::before{
+    content: "Page Size";
+    color: gray;
+    font-size: 18px;
+}

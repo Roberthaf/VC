@@ -1,0 +1,125 @@
+.admin-container{
+    position: relative;
+    height: 100vh;
+    padding-top: 15px;
+}
+.admin-container__table{
+    width: 70%;
+}
+.admin-container__edit{
+    margin: 0 0 0 25px;
+    width: 30%;
+    min-height: 1200px;
+}
+.box-shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.adminview-selecting{
+    padding: 5px 0 0 10px;
+    margin: 10px;
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.adminview-selecting:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.gray-text{
+    color:rgb(187, 186, 186);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.select-react-component{
+    width: 200px;
+}
+
+.delete-icon{
+    font-size: 20px;
+    color: red;
+}
+
+.td-delete-icon{
+    width: 30px;
+}
+
+#left-tabs-pane-4 > div > div.table-container > div.react-bootstrap-table > table > tbody > tr:nth-child(1) > td:nth-child(4){
+    width: 80px;
+}
+
+#left-tabs-pane-4 > div > div.table-container > div.react-bootstrap-table > table > tbody > tr:nth-child(1) > td:nth-child(4) > i:hover{
+    transform: scale(1.1);
+    color: rgb(179, 20, 20);
+    cursor: pointer;
+}
+
+.td-delete-icon > i:hover{
+    transform: scale(1.1);
+    color: rgb(179, 20, 20);
+}
+
+.td-delete-icon{
+    width: 30px;
+}
+
+.td-delete-icon > i:hover{
+    transform: scale(1.1);
+    color: rgb(179, 20, 20);
+}
+.delete-icon-list{
+    cursor: pointer;
+    font-size: 18px;
+    list-style: none;
+}
+
+.delete-icon-list i{
+    font-size: 16px;
+    color: red;
+}
+
+.delete-icon-list > i:hover{
+    transform: scale(1.1);
+    color: rgb(179, 20, 20);
+}
+
+.role-component{
+    padding-top:25px;
+}
+
+#user-role{
+    height:38px;
+}
+
+#left-tabs > div > div {
+    min-height: 1000px;
+    height: 100%;
+}
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.not-allowed:hover {
+    cursor: not-allowed;
+}
+
+.table-container > div:nth-child(2) > div > div > table > tbody > tr > td:nth-child(4) > i:hover {
+    transform: scale(1.1);
+    color: rgb(179, 20, 20);
+}
+.admin-veiw-table div > table > tbody > tr{
+    cursor: pointer;
+}
+
+.admin-veiw-table div > table > thead > tr> th{
+    cursor: pointer;
+}

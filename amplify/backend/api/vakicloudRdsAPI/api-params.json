@@ -1,0 +1,93 @@
+{
+    "paths": [
+        {
+            "name": "/counters",
+            "lambdaFunction": "vakicloudRdsConnect",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            }
+        },
+        {
+            "name": "/adminview",
+            "lambdaFunction": "vakicloudRdsConnect",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            }
+        },
+        {
+            "name": "/getFile",
+            "lambdaFunction": "vakicloudRdsConnect",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            }
+        },
+        {
+            "name": "/getFileBlob",
+            "lambdaFunction": "vakicloudRdsConnect",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            }
+        },
+        {
+            "name": "/spotlice",
+            "lambdaFunction": "vakicloudRdsConnect",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            }
+        }
+    ],
+    "resourceName": "vakicloudRdsAPI",
+    "apiName": "vakicloudRdsAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "vakicloudRdsConnect"
+        }
+    ],
+    "privacy": {
+        "auth": 5,
+        "unauth": 0,
+        "authRoleName": "vakicloud-dev-20191003151227-authRole",
+        "unAuthRoleName": "vakicloud-dev-20191003151227-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "vakicloudRdsConnect",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "291d0559"
+}

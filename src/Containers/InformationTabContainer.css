@@ -1,0 +1,31 @@
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+/* Align text inside informationTab to the left */
+.Information-tab {
+    text-align: left;
+    padding: 15px 15px 15px 15px;
+}
+.Information-tab > h4 {
+    margin-bottom: 5px;
+}
+/* Set font size of tab headers */
+#counter-info > ul > li > a {
+    font-size: 125%;
+    font-weight: 500;
+}
+/* Stop then from floating outside of their parent div*/
+.tab-content{
+    overflow: hidden;      
+}
+
+#fakeDiv{
+    height: 80px;
+    
+}

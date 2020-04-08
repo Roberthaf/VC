@@ -1,0 +1,11 @@
+.population-container{
+    width: 100%;
+}
+.population-container__table{
+
+    width: 70%;
+}
+.population-container_edit{
+    margin-left: 55px;
+    width: 30%;
+}

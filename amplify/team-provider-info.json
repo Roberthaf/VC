@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "vakicloud-dev-20191003151227-authRole",
+            "UnauthRoleArn": "arn:aws:iam::387526128415:role/vakicloud-dev-20191003151227-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::387526128415:role/vakicloud-dev-20191003151227-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "vakicloud-dev-20191003151227-deployment",
+            "UnauthRoleName": "vakicloud-dev-20191003151227-unauthRole",
+            "StackName": "vakicloud-dev-20191003151227",
+            "StackId": "arn:aws:cloudformation:eu-west-1:387526128415:stack/vakicloud-dev-20191003151227/36999f60-e5f0-11e9-93ce-0a99a68566c4",
+            "AmplifyAppId": "d8opyaosk97st"
+        },
+        "categories": {
+            "auth": {
+                "vakicloud0e5f92bf": {}
+            },
+            "function": {
+                "vakicloudRdsConnect": {}
+            }
+        }
+    }
+}

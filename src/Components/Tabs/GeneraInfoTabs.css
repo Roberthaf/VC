@@ -1,0 +1,14 @@
+.inl {
+    display: block;
+    font-size: 1.2rem!important;  
+}
+.inl-front {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+.inl-back {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}

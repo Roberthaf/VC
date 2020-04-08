@@ -1,0 +1,26 @@
+.spotlice-container{
+    padding-top: 25px;
+}
+.spotliceContainer{
+    margin: 25px 155px 25px 155px;
+    /*width:80%;*/
+    /* margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px; */
+}
+.organisationText{
+    font-size: 28px;
+    font-weight: 600px;
+    font-family: Roboto!important;
+    color: #73879C;
+    max-height: 52px;
+    /*min-height: 52px;*/
+    padding-top: 5px;
+    text-shadow:0 0 1px transparent;
+}
+.reportMainContainer{
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }

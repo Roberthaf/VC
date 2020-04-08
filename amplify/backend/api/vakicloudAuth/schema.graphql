@@ -1,0 +1,83 @@
+type User @model{
+  id: ID!
+  name: String!
+  admin: Boolean!
+  consent: Boolean!
+  email: String!
+  firstName: String
+  lastName: String
+  phoneNumber: ID
+  role: String
+  BiomassDaily: Boolean
+  Counters: Boolean
+  InspectionStation: Boolean
+  Spotlice: Boolean
+  organisation: [Organisation] @connection
+  organisations: [UserOrg] @connection(name: "Users")
+}
+
+type UserOrg @model(queries: null){
+  id: ID!
+  organisation: Organisation! @connection(name: "Organisations")
+  user: User! @connection(name: "Users")
+}
+
+type Organisation @model{
+  id: ID!
+  orgName: String!
+  orgID: Int!
+  email: String
+  address: String
+  phoneNumber: ID
+  timezone: String
+  isActive: Boolean
+  users: [UserOrg] @connection(name: "Organisations")
+  farms: [Farm] @connection
+  counters: [Counter] @connection
+}
+
+type Farm @model {
+  id: ID!
+  farmName: String!
+  farmID: Int!
+  email: String
+  phoneNumber: ID
+  timezone: String
+  lat: Int
+  long: Int
+  isActive: Boolean
+  # org: Organisation @connection(name: "OrgFarm")
+  population: [Population] @connection
+}
+
+type Population @model {
+  id: ID!
+  popName: String!
+  popID: Int!
+  species_id: Int
+  isActive: Boolean
+  population_GUID: String 
+  # farm: Farm @connection(name: "FarmPop")
+}
+
+type Counter @model {
+  id: ID!
+  counterID: Int!
+  counterName: String
+  organisationId: Int
+  organisationName: String
+  farmId: Int
+  description: String
+  counterType: Int
+  processData: Int
+  product: String
+  location: String
+}
+
+type Licence @model {
+  id: ID!
+  licence: String!
+  counterID: ID
+  createdBy: String!
+  createdDate: String
+}

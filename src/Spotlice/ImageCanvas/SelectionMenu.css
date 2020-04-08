@@ -1,0 +1,121 @@
+/* Show or hide our table*/
+.hideDis{
+    display: none;
+}
+
+.showDis{
+    display: inherit;
+}
+
+.selectionMenu{
+    z-index:100;
+}
+
+.selectionMenu ul{
+    list-style-type: none;
+    /*padding-top: 2px;*/
+}
+
+.selectionMenu ul li {
+    background-color: #dddddd;
+    width: 120px;
+    padding: 5px 0px 5px 10px;    
+    cursor: pointer;
+}
+
+.selectionMenu ul li:Hover {
+    background-color: #c9c4c4;
+}
+
+.tree_base{
+    position: relative;
+    left:-40px;
+}
+
+.SelectionText{    
+    border-width: 0;
+    outline: none;
+    border-radius: 0px;
+    padding: 5px 0px 5px 10px;    
+    width: 120px;
+    color: black;
+    background-color: #dddddd;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+.saveButton{
+    position: absolute;
+    
+    width:100px;
+    left: -170px;
+    top: 102px;
+} 
+
+.tier1{
+    position: absolute;
+    left: 120px;
+    top: 0px;
+   /* padding-bottom: 4px;*/
+}
+.showDis.tier1 > li{
+    width: 80px;
+}
+.tier2{
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+
+.showDis.tier2 > li{
+    width: 80px;
+}
+
+.tier3 {
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    width: 120px;
+}
+
+/*
+.tierObs{
+    position: absolute;
+    left:120px;
+    top:75px;
+}
+*/
+.CommentField{
+    position: absolute;
+    top: 90px;
+    left: 200px;
+}
+
+.buttn.selected{
+    background-color: #afaaaa;
+    border-bottom: 2px solid rgb(97, 168, 214);
+    /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.705);*/
+}
+
+.saveButtonContainer{
+    position: absolute;
+    top: 152px;
+    left: 165px;
+}
+
+.preAdultSavebutton{
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+
+.saveButtonWoundContainer{
+    position: absolute;
+    top: 152px;
+    left: 285px;
+}
+
+.codLouseSaveButton{
+    position: relative;
+    left: 120px;
+}

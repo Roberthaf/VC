@@ -1,0 +1,22 @@
+
+.admin-veiw-table{
+    overflow-y: auto;
+    height: 520px;
+}
+.delete-icon{
+    cursor: pointer;
+}
+.delete-icon:hover{
+    color: rgb(187, 12, 12);
+}
+.search-box{
+   
+}
+
+#search-bar-0{
+    font-size: 1.1rem;
+}
+
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+}

@@ -1,0 +1,149 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "vakicloud-dev-20191003151227-authRole",
+			"UnauthRoleArn": "arn:aws:iam::387526128415:role/vakicloud-dev-20191003151227-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::387526128415:role/vakicloud-dev-20191003151227-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "vakicloud-dev-20191003151227-deployment",
+			"UnauthRoleName": "vakicloud-dev-20191003151227-unauthRole",
+			"StackName": "vakicloud-dev-20191003151227",
+			"StackId": "arn:aws:cloudformation:eu-west-1:387526128415:stack/vakicloud-dev-20191003151227/36999f60-e5f0-11e9-93ce-0a99a68566c4",
+			"AmplifyAppId": "d8opyaosk97st"
+		},
+		"categories": {
+			"auth": {
+				"vakicloud0e5f92bf": {}
+			}
+		}
+	},
+	"auth": {
+		"vakicloud0e5f92bf": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"output": {
+				"AppClientSecret": "13tctc54e29r4s6hfa58n246b57hv6esirsulh8lc40il4cci6mk",
+				"UserPoolId": "eu-west-1_jTkE9MSUU",
+				"AppClientIDWeb": "2dk2gtqs4fo4rmd41noguk0qs5",
+				"AppClientID": "73t0pka8emfntai24a1r2tedf2",
+				"IdentityPoolId": "eu-west-1:3921832b-82ad-4df5-b7f4-e6fc5ea48a40",
+				"IdentityPoolName": "vakicloud0e5f92bf_identitypool_0e5f92bf__dev",
+				"UserPoolName": "vakicloud0e5f92bf_userpool_0e5f92bf"
+			},
+			"lastPushTimeStamp": "2020-03-03T13:36:33.589Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/vakicloud-dev-20191003151227-deployment/amplify-cfn-templates/auth/vakicloud0e5f92bf-cloudformation-template.yml",
+				"logicalId": "authvakicloud0e5f92bf"
+			},
+			"lastPushDirHash": "ylKAdPrYFuJu8tYvxm63Is/HJSE="
+		}
+	},
+	"api": {
+		"vakicloudAuth": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authvakicloud0e5f92bf"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "rcewf4kh4nbdjluhfybiyf6gjq",
+				"GraphQLAPIEndpointOutput": "https://e7mrwjdzzvbavcxtrvkc776fty.appsync-api.eu-west-1.amazonaws.com/graphql"
+			},
+			"lastPushTimeStamp": "2020-03-03T13:36:32.701Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/vakicloud-dev-20191003151227-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apivakicloudAuth"
+			}
+		},
+		"vakicloudRdsAPI": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "vakicloudRdsConnect",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"output": {
+				"ApiName": "vakicloudRdsAPI",
+				"RootUrl": "https://h93jh4d41f.execute-api.eu-west-1.amazonaws.com/dev"
+			},
+			"lastPushTimeStamp": "2020-03-03T13:36:32.702Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/vakicloud-dev-20191003151227-deployment/amplify-cfn-templates/api/vakicloudRdsAPI-cloudformation-template.json",
+				"logicalId": "apivakicloudRdsAPI"
+			}
+		}
+	},
+	"function": {
+		"vakicloudRdsConnect": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "auth",
+					"resourceName": "vakicloud0e5f92bf",
+					"attributes": [
+						"UserPoolId"
+					]
+				},
+				{
+					"category": "api",
+					"resourceName": "vakicloudAuth",
+					"attributes": [
+						"GraphQLAPIIdOutput",
+						"GraphQLAPIEndpointOutput"
+					]
+				}
+			],
+			"output": {
+				"Region": "eu-west-1",
+				"Arn": "arn:aws:lambda:eu-west-1:387526128415:function:vakicloudRdsConnect-dev",
+				"Name": "vakicloudRdsConnect-dev",
+				"LambdaExecutionRole": "vakicloudLambdaRole3407a1f9-dev"
+			},
+			"lastPushTimeStamp": "2020-03-03T13:36:33.589Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/vakicloud-dev-20191003151227-deployment/amplify-cfn-templates/function/vakicloudRdsConnect-cloudformation-template.json",
+				"logicalId": "functionvakicloudRdsConnect"
+			},
+			"lastBuildTimeStamp": "2020-03-03T13:35:28.167Z",
+			"lastPackageTimeStamp": "2020-03-03T13:35:28.976Z",
+			"distZipFilename": "vakicloudRdsConnect-43736847573436486f78-build.zip",
+			"lastPushDirHash": "lVWAcz8wneQM2QuVc53IlNAFqqI="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"CloudFrontSecureURL": "https://dntracko6h8s9.cloudfront.net",
+				"S3BucketSecureURL": "https://vakicloud-20191015143157-hostingbucket-dev.s3.amazonaws.com",
+				"WebsiteURL": "http://vakicloud-20191015143157-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com",
+				"CloudFrontDistributionID": "EOG30C0WES1SI",
+				"Region": "eu-west-1",
+				"HostingBucketName": "vakicloud-20191015143157-hostingbucket-dev",
+				"CloudFrontDomainName": "dntracko6h8s9.cloudfront.net"
+			},
+			"lastPushTimeStamp": "2020-03-03T13:36:32.705Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/vakicloud-dev-20191003151227-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			}
+		}
+	},
+	"storage": {}
+}

@@ -1,0 +1,62 @@
+{
+  "name": "vakicloud",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "@devexpress/dx-react-core": "^2.4.0",
+    "@devexpress/dx-react-grid": "^2.4.0",
+    "@devexpress/dx-react-grid-bootstrap4": "^2.4.0",
+    "aws-amplify": "^2.2.5",
+    "aws-amplify-react": "^3.1.6",
+    "aws-appsync": "^3.0.2",
+    "aws-sdk": "^2.621.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "graphql": "^14.6.0",
+    "graphql-tag": "^2.10.3",
+    "highcharts": "^8.0.0",
+    "html2canvas": "^1.0.0-rc.5",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "long": "^4.0.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.18.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-app-polyfill": "^1.0.6",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-bootstrap-table-next": "^3.3.5",
+    "react-bootstrap-table2-toolkit": "^2.1.2",
+    "react-dates": "^21.8.0",
+    "react-dom": "^16.12.0",
+    "react-jsx-highcharts": "^4.0.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.0",
+    "react-select": "^3.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@aws-amplify/cli": "^4.13.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-object-assign": "^7.8.3",
+    "canvas": "^2.6.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest-canvas-mock": "^2.2.0"
+  }
+}

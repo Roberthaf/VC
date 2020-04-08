@@ -1,0 +1,7 @@
+{
+	"dbhost" : "vaki-dev.cof9gsjf5r3c.eu-west-1.rds.amazonaws.com",
+	"dbname" : "spotlice_dev",
+	"dbuser" : "spotlice_web",
+	"dbpassword": "3LittleLice",
+	"dbport" :  "3306"
+}

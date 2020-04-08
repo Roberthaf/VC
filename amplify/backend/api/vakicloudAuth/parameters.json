@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "vakicloudAuth",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authvakicloud0e5f92bf",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

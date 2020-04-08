@@ -1,0 +1,29 @@
+.button {
+    border: none;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 15px 10px 0;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+.button1 {background-color: #cdcfd1;}
+.button1:hover{
+    background-color: #d4d6d8;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tabel-loading{
+    position: relative;
+    left: 150px;
+    top: 150px;
+}
+/* @media only screen and (min-width: 1600px) {
+    .default-margin{
+      margin: 0vh 30vh 0vh 30vh!important;
+    }
+  } */

@@ -1,0 +1,97 @@
+.imageCanvasContainer{
+    margin: 15px 0px 0px 0px;
+}
+
+#canvas{
+    cursor: crosshair;
+}
+  
+.SpinnerLocationImageCanvas{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Zoomlens{
+    position: absolute;
+}
+.img-zoom-lens {
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  width: 400px;
+  height: 400px;
+}
+
+#zommedImage{
+   position: absolute;
+}
+.SideWindow{
+    position: absolute;
+}
+.SideWindowText{
+    position: relative;
+    top: 400px;
+    height: 600px;
+    width: 300px;
+}
+.ContainerText{
+    position: relative;
+    font-size: 32px;
+    font-weight: 600px;
+    font-family: Roboto!important;
+    opacity: 50%;
+    color: #73879C;
+}
+
+.imageFromContainer{
+    width:400px;
+}
+
+/* Buttons for rejecting or finising marking */
+.ClassificationButtons{
+    position: relative;
+    top: 25px;
+    /* padding-top: 25px; */
+    /* margin-top: 25px; */
+    padding-left: 15px;
+}
+
+.Finish_Marking{
+    margin-left: 5px;
+    height: 34px;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #0ac404;
+    color: #ecf0f1;
+    transition: background-color .3s;
+}
+
+.Finish_Marking:hover, .Finish_Marking:focus {
+    background-color: #007510;
+}
+
+.Reject_Marking{
+    margin-left: 5px;
+    height: 34px;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #c42104;
+    color: #ecf0f1;
+    transition: background-color .3s;
+}
+
+.Reject_Marking:hover, .Reject_Marking:focus {
+    background-color: #750000;
+}
+
+.TabContainer{
+    min-height: 300px;
+    width: 400px;
+    padding: 45px 0p 0p 25px;
+}

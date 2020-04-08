@@ -1,0 +1,10 @@
+.farms-container{
+    width: 100%;
+}
+.farms-container__table{
+    width: 70%;
+}
+.farms-container_edit{
+    margin-left: 55px;
+    width: 30%;
+}

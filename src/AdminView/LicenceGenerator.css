@@ -1,0 +1,25 @@
+.licence-container{
+    height: 600px;
+}
+.counters-checkboxes{
+    width: 150px;
+    background-color: lightgray;
+    padding: 10px 5px 10px 5px;
+}
+.form-container{
+    padding-left: 5px;
+}
+.products-checkboxes{
+    width: 130px;
+    background-color: lightgray;
+    padding: 10px 5px 10px 5px; 
+}
+.timebox{
+    margin: 20px 0px 0px 20px;
+}
+.calculate-box{
+    margin: 20px 0px 20px 20px;
+}
+.inputs-conatiner{
+    margin: 20px 0px 20px 20px;
+}

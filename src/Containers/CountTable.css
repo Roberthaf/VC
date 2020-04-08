@@ -1,0 +1,20 @@
+.organization-select{
+    width:300px;
+    z-index: 10;
+}
+
+.CountRecords{
+    cursor: pointer;
+}
+
+/*Custom hight for each line in the Count Records table*/
+.table-responsive.dx-g-bs4-table-container > div > table > tbody > tr > td {
+    padding: .55rem;
+}
+.Count-table-main{
+    cursor: pointer;
+}
+.text-muted{
+    position: relative;
+    left: 50%;
+}

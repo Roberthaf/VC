@@ -1,0 +1,173 @@
+.FarmAndDateContainer{
+    padding: 1px 0px 30px 30px;
+};
+
+.reportMainContainer{
+    
+    margin-bottom: 25px;
+}
+
+.reportTable{
+    margin-top: 25px;
+}
+.reportTable > span {
+    font-size: 24px;
+
+}
+.saveMenuButton{
+    position: relative;
+    top: 5px;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.greyText{
+    color: rgba(102, 103, 105, 0.808);
+    font-size: 16px;
+}
+.blackText{
+    color:black;
+    font-size: 16px;
+}
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #section-to-print, #section-to-print * {
+      visibility: visible;
+    }
+    #section-to-print {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+.tableHead{
+    width: 1220px;
+}
+.barchart_container{
+ width:650px;   
+    
+}
+/* 
+.reportMainContainer{
+    position: relative;
+    left:10px;
+    margin-top: 50px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+    A4 in pixels
+    height: 2480px;
+    width: 3508px; 
+    Landscape
+    height: 826px;
+    width: 1169px;
+} */
+
+/* .reportContainer{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px 0px 10px 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+} */
+/* 
+.reportInformation{
+    padding: 15px 15px 15px 15px;
+}
+
+.SaveButtons{
+    position: absolute;
+    left: 725px;
+    top: 40px;
+    width:200px;
+    display: flex;
+}
+
+.reportDropdown_list {
+    width: 150px;
+    margin-left: 10px;
+    height: 36px;
+    font-family: Roboto!important;
+    color: rgb(34, 13, 13);
+    padding: 3px 1px 7px;
+    border: 1px solid #cacccd;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    background-color: #fff;
+} */
+
+/* 
+.piechart_container{
+
+}
+
+.reportHeadText{
+    font-size: 40px;
+    font-weight: 600px;
+    font-family: Roboto!important;
+    opacity: 50%;
+    color: #73879C;
+}
+
+.FarmAndDateContainer{
+    margin-bottom: 55px;
+}
+
+.report{
+    margin: 0px 125px 0px 0px;
+    width: 900px;
+}
+.centerAlign{
+    text-align: center;
+}
+.green{ 
+    background-color: rgba(0, 128, 0, 0.363)
+}
+.yellow{ 
+    background-color: rgba(179, 167, 5, 0.363)
+}
+.red{ 
+    background-color: rgba(160, 6, 6, 0.363)
+}
+.blue{
+    background-color: rgba(7, 10, 175, 0.363)
+}
+.grey{
+    background-color: rgba(149, 162, 177, 0.808)
+}
+
+
+.pointer{
+    cursor: pointer;
+
+}
+
+.hide{display: none}
+
+.Table_content{
+    width:50%
+}
+
+.report_main{
+    position: relative;
+    left:25px;
+}
+
+.report_main_number{
+
+}
+
+.lice_reporting {
+    width:50%;
+}
+
+.focus{
+}
+.flex-container{
+    display: flex;
+} 
+*/
