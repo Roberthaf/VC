@@ -15,7 +15,7 @@
     "bootstrap": "^4.4.1",
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.3",
-    "highcharts": "^8.0.0",
+    "highcharts": "^9.0.0",
     "html2canvas": "^1.0.0-rc.5",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
